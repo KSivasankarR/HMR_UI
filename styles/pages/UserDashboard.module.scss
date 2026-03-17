@@ -1,0 +1,145 @@
+@import "../colors";
+
+.Container {
+    margin: 2%;
+}
+
+.TitleText1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $SelectedColor;
+}
+
+.TitleText2 {
+    color: $SelectedColor;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    background: linear-gradient(90deg, #394C91 0.86%, #27D3E0 100%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.NavbarText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    color: $NavbarTextColor;
+}
+
+.infoText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.leftContainer {
+    width: 40%;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 0;
+}
+
+.rightContainer {
+    width: 60%;
+}
+
+.button {
+    margin-bottom: 1em;
+    background-color: $SelectedColor;
+    text-decoration: none;
+    color: white;
+    border-color: transparent;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+
+.button:hover {
+    background-color: $primaryColor;
+    color: white;
+}
+
+.statusContainer {
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.statusTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.statusText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.modalOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    font-family: "Montserrat";
+    font-style: normal;
+
+    .modalCard{
+        background-color: $NavbarTextColor;
+        padding: 32px 32px 20px 32px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+
+        button{
+            font-size: 16px;
+    background: none;
+    border: none;
+    color: $NavbarTextColor;
+    font-weight: 500;
+    background: $SelectedColor;
+    padding: 4px 16px;
+    cursor: pointer;
+    margin-right: 12px;
+        }
+
+        button:last-child{
+            background-color: $dark-grey;
+        }
+    }
+}

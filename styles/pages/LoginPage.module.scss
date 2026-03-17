@@ -1,0 +1,252 @@
+@import "../colors";
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    input[type="text"] {
+        text-transform: uppercase;
+    }
+}
+
+.leftContainer {
+    width: 55%;
+}
+
+.rightContainer {
+    width: 30%;
+    // background-color: darkgoldenrod;
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.TopImageContainer {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+
+    .image {
+        object-fit: cover; // Optional
+        z-index: 1;
+    }
+}
+.TopSMImageContainer{
+    position: relative;
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+
+}
+.frameContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    .leftImageContainer {
+        z-index: 2;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .rightImageContainer {
+        width: 60%;
+        display: flex;
+        align-items: flex-end;
+
+    }
+}
+.smFrameContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    z-index: 0;
+
+}
+
+.HeadingText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: $SelectedColor;
+}
+
+.TitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+    color: $SelectedColor;
+    margin-bottom: 1rem;
+}
+
+.subTitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.keyText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.loginButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.loginButton {
+    width: 137.78px;
+    height: 40px;
+    background-color: $SelectedColor;
+    // border-radius: 3px;
+    // border-color: $SelectedColor;
+    border-color: transparent;
+    border-radius: 0.5rem;
+
+}
+
+.loginButton:hover {
+    background: $primaryColor;
+    
+}
+
+.buttonText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.pointerText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $SelectedColor;
+    cursor: pointer;
+
+}
+
+.simpleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.RegPointerText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: $SelectedColor;
+    cursor: pointer;
+}
+
+.RegPointerText:hover {
+    color: $primaryColor;
+}
+
+.pointerText:hover {
+    color: $primaryColor;
+}
+
+.warningText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: red;
+}
+
+.button {
+    margin-bottom: 1em;
+    background-color: $SelectedColor;
+    text-decoration: none;
+    color: white;
+    border-color: transparent;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: $primaryColor;
+    color: white;
+}
+
+.infoText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.TitleText1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $SelectedColor;
+}
+
+.TitleText2 {
+    color: $SelectedColor;
+}
+
+.ruleBox{
+    font-size: 12px;
+    padding: 8px;
+    margin-bottom: 8px;
+    background: lightblue;
+    color: $navy-blue;
+    border: none;
+    border-radius: 4px;
+}
+
+.inputdata {
+    position: relative;
+  }
+  .icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    vertical-align: middle;
+  }

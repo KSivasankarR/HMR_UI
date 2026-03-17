@@ -1,0 +1,207 @@
+@import "../colors";
+
+.HeadingContainer {
+    display: flex;
+    justify-content: space-around;
+    // margin: 1em;
+    margin-bottom: 0;
+    white-space: nowrap;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.leftHeadingContainer {
+
+    width: 32%;
+    // margin-left: 1em;
+    display: flex;
+    // justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+
+
+.midHeadingContainer {
+    width: 36%;
+    // margin-left: 1em;
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+.rightHeadingContainer {
+    width: 32%;
+    // margin-left: 1em;
+    // margin-right: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    // .cmImage{
+    //     border-radius: 50%;
+    //     border: 1px solid #11549A !important;
+    // }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 800px) {
+    .leftHeadingContainer {
+        display: none;
+    }
+
+    .rightHeadingContainer {
+        display: none;
+    }
+}
+
+.textContainer {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+}
+
+.infoText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.InfoBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.InfoTextContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin-left: 2rem;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.InfoBarText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6px;
+    margin-right: 2rem;
+
+    @media screen and (max-width: 800px) {
+        font-size: 10px;
+    }
+
+}
+
+.SearchContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.searchBox {
+    height: 26px;
+    width: 230px;
+    background-color: #E9E9E9;
+    border-color: transparent;
+    padding-left: 6px;
+}
+
+.searchButton {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    background-color: #E9E9E9;
+}
+
+.StartLine {
+    background: linear-gradient(90deg, #394C91 0.86%, #27D3E0 100%);
+    width: 100%;
+    height: 5px;
+}
+
+.touchableOpacity {
+    // background-color: $BoldColor;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $boldColor;
+    }
+}
+
+.Navbar {
+    background-color: $primaryColor;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.NavbarText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    color: $NavbarTextColor;
+}
+
+.midHeadingContainer {
+    text-align: center;
+}
+.govtitleText {
+    font-size: 15px !important;
+}
+
+.govText {
+    background: url('../../public/images/redline.svg') no-repeat left center;
+    background-size: 67px 39px;
+    font-size: 12px;
+    padding-left: 73px;
+    font-weight: 700;
+}

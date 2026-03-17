@@ -1,0 +1,401 @@
+@import "../colors";
+%buttonStyle {
+    margin-left: 0.2%;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    // border-color: #3668a1;
+    background-color: #3668a1;
+    padding: 6px 40px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+
+
+
+.Container {
+    margin: 2%;
+    min-height: calc(100vh - 330px);
+}
+
+.titlecontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5%;
+
+    .heading {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #3668a1;
+        margin: 18px 0;
+
+
+        align-items: center;
+    }
+}
+
+.TitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $boldColor;
+}
+
+// .tabcontainer{
+//     display: flex;
+//     margin-left: 2.5%;
+//     margin-bottom: 0.6%;
+//     border-bottom: 1px solid #3668a1;
+//     // gap: 2%;
+//     width: 95%;
+
+// .button{
+//     margin-left: 0.2%;
+//     border: none;
+//     font-size: 14px;
+//     font-weight: 700;
+//     color: #fff;
+//     // border-color: #3668a1;
+//     background-color: #3668a1;
+//     padding: 6px 40px;
+//     border-radius: 8px 8px 0 0;
+//     cursor: pointer;
+
+// } 
+// .button:focus{
+//     border: 1px solid #3668a1;
+//     // border-color: #3668a1;
+//     border-bottom: none;
+//     background-color:#fff;
+//     color: #3668a1;
+//   }
+// }
+.SecondaryTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    color: $SelectedColor;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: $primaryColor;
+    background: linear-gradient(90deg, #394C91 0.86%, #27D3E0 100%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.NavbarText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    color: $NavbarTextColor;
+}
+
+.dropdownContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.keyText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 1.3rem;
+}
+
+.ListComponentContainer {
+    width: 100%;
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+    border-color: rgb(233, 233, 233);
+    border-width: 2px;
+    border-style: solid;
+    padding: 1rem;
+    margin-top: 1em;
+
+    .keyTitleText {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 22px;
+        margin-top: 1.3rem;
+    }
+
+    .keyText {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 22px;
+        margin-top: 1.3rem;
+    }
+
+    .valueText {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 22px;
+        margin-top: 1.3rem;
+        color: $SelectedColor;
+    }
+
+    .buttonsContiner {
+        width: 100%;
+        // background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 5px;
+
+        .button {
+            background-color: $SelectedColor;
+            border-width: none;
+            margin-left: 1em;
+            border-color: transparent;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}
+
+.tableFormat {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    .touchableContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+
+    .touchableContainer:hover {
+        color: $boldColor;
+    }
+
+    .tableColumnContainer {
+        width: 12%;
+        margin: 2px;
+        // background-color: white;
+    }
+
+    .tableSpecialContainer {
+        width: 21%;
+        margin: 2px;
+        // background-color: white;
+    }
+
+    .button {
+        background-color: $SelectedColor;
+        border-width: none;
+        border-color: transparent;
+        color: white;
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+
+.SelectContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 1rem;
+
+    .key {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .searchContainer {
+        width: 20%;
+    }
+}
+
+.DisplayBar {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    padding-left: 1em;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.cancelButton {
+    padding-right: 1em;
+    cursor: pointer;
+    color: white;
+    background-color: $boldColor;
+    border-radius: 10px;
+    padding-left: 1em;
+}
+
+.EditButton {
+    background-color: $SelectedColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+.EditButton:hover {
+    background-color: $primaryColor;
+}
+
+.css-f3jnds-MuiDataGrid-columnHeaders {
+    background-color: blue !important;
+}
+.GridTable {
+    cursor: pointer;
+    overflow: auto;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-bottom: 0;
+
+    
+
+    thead {
+
+        background: linear-gradient(90deg, #394C91 0.86%, #27D3E0 100%);
+
+        color: #fff;
+
+    }
+
+
+
+    tr {
+
+
+
+        th,
+
+        td {
+
+            font-family: 'Montserrat';
+
+            font-style: normal;
+
+            font-weight: 700;
+
+            font-size: 14px;
+
+            text-align: left;
+
+            padding: 10px 19px;
+
+        }
+
+
+
+        td {
+
+            font-weight: 500;
+
+            font-size: 14px;
+
+            text-align: left;
+
+            padding: 10px 20px;
+
+        }
+
+
+
+        tr:nth-child(odd) {
+
+            td {
+
+                border: 1px solid #cbcbcb;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                color: $dark-charcoal;
+                text-align: left;
+                padding: 10px 20px;
+            }
+
+        }
+
+    }
+
+}
+
+.tabcontainer {
+    display: flex;
+    margin-left: 2.5%;
+    margin-bottom: 0.2%;
+    border-bottom: 1px solid #3668a1;
+    // gap: 2%;
+    width: 95%;
+    .button {
+        @extend %buttonStyle;
+    }
+    .activeButton {
+        @extend %buttonStyle;
+        border: 1px solid #3668a1;
+        border-color: #3668a1;
+        border-bottom: none;
+        background-color: #fff;
+        color: #3668a1;
+    }
+    
+}
+.DropDown{
+    border-radius: 4px;
+    padding: 0.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.DashboardTitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: $boldColor;
+}
+
+.btn{
+    background-color:$SelectedColor ;
+    color: #FFFFFF;
+    margin: 2rem;
+    cursor: pointer;
+    margin-top:10px ;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    justify-self: flex-end;
+    border-radius: 0.5rem;
+
+}
+.btn:hover {
+    background-color: $primaryColor;
+}

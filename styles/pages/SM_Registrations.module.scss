@@ -1,0 +1,118 @@
+@import "../colors.scss";
+// @import "../components/Table.module.scss";
+
+%tabStyle{
+    background-color: $primaryColor;
+    color: $NavbarTextColor;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 18px 32px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 18px;
+}
+
+.headerText{
+    color: $light-orange;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.tabContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px 4px;
+}
+.tabHeader{
+    @extend %tabStyle;
+}
+.activeTabHeader{
+    @extend %tabStyle;
+    background-color: $navy-blue;
+}
+.BrideContainer{
+    background-color: $TableBlackColor;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px 18px;
+    padding: 24px 30px;
+    min-height: 400px;
+
+    input[type="file"]{
+        width: 100%;
+    }
+}
+.Footer{
+    padding: 22px 30px 16px 30px;
+    background-color: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+        color: $NavbarTextColor;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        padding: 16px 28px;
+        border-radius: 4px;
+        background-color: $navy-blue;
+        border: none;
+    }
+
+    .prev{
+        background-color: $dark-grey;
+    }
+
+}
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tablecontainer{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+.TitleText{
+    font-weight: 700;
+    font-size: 20px;
+    color: $light-orange;
+}
+.UploadText{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $warning-red;
+}
+.customSelect{
+    select{
+        height: 40px !important;
+        margin-bottom: 8px;
+    }
+}
+.flexAlignBottom{
+    display: flex;
+    align-items: flex-end;
+    gap: 0px 18px;
+    width: 100%;
+}
+.docContainer{
+    width: 100%;
+
+    div:first-child{
+        width: 100% !important;
+
+        input[type='file']{
+            width: 100%;
+        }
+    }
+}

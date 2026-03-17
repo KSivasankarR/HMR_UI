@@ -1,0 +1,30 @@
+@import "../colors.scss";
+
+%shared {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 49%;
+    gap: 8px;
+    
+    label {
+        color: $black;
+        font-weight: 700;
+        line-height: 18px;
+
+        span{
+            color: $warning-red;
+        }
+    }
+}
+.WrappedElement{
+    @extend %shared;
+}
+.FullyWrapped{
+    width: 100%;
+}
+@media screen and (max-width: 1023px) {
+    .WrappedElement{
+        width: 48%;
+    }
+}

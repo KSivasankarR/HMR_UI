@@ -1,0 +1,69 @@
+@import "../colors";
+
+.Container {
+    margin: 2%
+}
+
+.TitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $SelectedColor;
+}
+
+.paraText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.tableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftTableContainer {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    background-color: #f0eeee;
+    padding: 1em;
+}
+
+.rightTableContainer {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    background-color: #f0eeee;
+    padding: 1em;
+}
+
+.letTableText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+
+}
+
+.rightTableText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}

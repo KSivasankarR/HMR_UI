@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+  min-width: 960px;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    
+}
+
+// div {
+//   word-wrap: break-word;         /* All browsers since IE 5.5+ */    
+//   overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */    
+//   // width: 100%;
+// }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+// input:focus { 
+//   outline: none !important;
+//   border-color: red;
+//   border-width: 1.5px;
+//   // box-shadow: 0 0 10px skyblue;
+// }
+
+footer {
+  // position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+}

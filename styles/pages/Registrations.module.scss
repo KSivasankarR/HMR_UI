@@ -1,0 +1,277 @@
+@import "../colors";
+
+.Container {
+    margin: 0.5% 2% 2% 2%;
+
+    input[type="text"] {
+        text-transform: uppercase;
+    }
+    input:focus:invalid, select:focus:invalid{
+        outline: 2px solid red;
+    }
+}
+
+.tirumalLabel {
+    background: #FFFFFF;
+    width: 100%;
+    // height: 50px;
+    padding: 0.5em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $black;
+}
+.UploadText{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+}
+.UploadText h6{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+}
+.challanCon {
+    background: #f2f2f2;
+    border-radius: 5px;
+    // margin: 20px 60px 30px;
+        margin: 0px ;
+
+    // justify-content: center;
+    // align-items: center;
+
+    .challanInfo {
+        margin: 0 auto;
+
+        .formInfo {
+            display: inline-flex;
+            margin-left: 15px;
+
+            .challanBtn {
+                text-align: center;
+                width: auto !important;
+                background-color: $SelectedColor;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-weight: 600;
+                font-size: 14px;
+                margin-left: 20px;
+                border: none;
+            }
+        }
+
+        .challanDetails {
+            background-color: white;
+            padding: 20px;
+            margin: 40px 0 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    }
+}
+
+.checkBox {
+    width: 19px;
+    height: 19px;
+    margin-right: 1rem;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #394C91 0.86%, #27D3E0 100%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.NavbarText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    color: $NavbarTextColor;
+}
+
+.TitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 130%;
+    line-height: 29px;
+    color:$SelectedColor;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2px;
+}
+
+.singleTitleColumn {
+    background-color: $TableTitleBlackColor;
+    width: 33%;
+    padding: 5px;
+    text-align: center;
+}
+
+.singleColumn {
+    background-color: $TableBlackColor;
+    width: 33%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.columnTitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $SelectedColor;
+}
+
+.paymentContainer {
+    background-color: $TableTitleBlackColor;
+    // background-color: $primaryColor;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.paymentButtton {
+    text-align: center;
+    background-color: $SelectedColor;
+    color: $NavbarTextColor;
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+.paymentButtton:hover {
+    background-color: $primaryColor;
+}
+.draftContainer {
+    background-color: $TableTitleBlackColor;
+    // background-color: $primaryColor;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+}
+
+.draftButtton {
+    text-align: center;
+    background-color: $SelectedColor;
+    color: $NavbarTextColor;
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    // margin-left: 150px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.draftButtton:hover {
+    background-color: $primaryColor;
+}
+
+.adhaarbtn{
+    text-align: center;
+    background-color: $SelectedColor;
+    color: $NavbarTextColor;
+    border: none;
+    height: 30px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.adhaarbtn:hover {
+    background-color: $primaryColor;
+}
+
+.warningText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: red;
+}
+
+.marriageContainer {
+    background-color: $TableBlackColor;
+    margin: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // width: 100%;
+    padding: 10px;
+
+    .leftColumn {
+        width: 33%;
+    }
+
+    .rightColumn {
+        width: 32.5%;
+        padding-left: 10px;
+    }
+}
+
+.EditButton {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 1px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn {
+    border: none;
+    background-color: #1AA3E3;
+    color: white;
+}
+
+.marriageDropDown{
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+    margin: 8px 0px 16px;
+}
+
+.MarriageConditions{
+    display: flex;
+    flex-flow: column;
+    color: $warning-red;
+    font-size: 16px;
+
+    span{
+        font-size: 14px;
+        font-weight: 400;
+        color: $black
+    }
+}

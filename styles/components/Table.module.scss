@@ -1,0 +1,151 @@
+@import "../colors";
+
+
+
+.singleColumn {
+    background-color: $TableBlackColor;
+    width: 33%;
+    padding: 10px;
+}
+
+.columnText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: $black;
+}
+
+.columnInputBox {
+    background: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    width: 100%;
+    // height: 50px;
+    padding: 0.5em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: $black;
+}
+
+// .columnInputBox:focus{
+//     border: 2px solid red;
+//   }
+
+.columnInputBox::placeholder {
+    color: $placeholder;
+}
+
+.columnInputBox:disabled{
+    cursor: not-allowed;
+    background-color: #DADEEA;
+    box-shadow: none;
+}
+
+.TableRadioButton {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $dark-charcoal;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    accent-color: $dark-charcoal;
+}
+
+.TableRadioLabel {
+    padding: 0 17px 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.datepicker {
+    height: 50px;
+    font-size: 16px;
+    color: #414D64;
+    background: #ffffff;
+    padding: 0 15px;
+    border: 2px solid #DADEEA;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.columnDateInputBox {
+    background: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: $black;
+    padding: 10px;
+    padding-right: 5px;
+    display: inline-block;
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+}
+
+.columnDropDownBox {
+    background: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: $black;
+    padding: 5px;
+    padding-right: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../../public/images/icon-select.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+select .columnDropDownBox {
+    width: 300px;
+}
+
+.DateContainer {
+    position: relative;
+
+    &>span {
+        position: absolute !important;
+        top: 30%;
+        right: 5%;
+    }
+}

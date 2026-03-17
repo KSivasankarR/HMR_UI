@@ -1,0 +1,179 @@
+@import "../colors";
+
+.Container {
+    margin: 2%;
+}
+
+
+.btn {
+	border: none;
+    background-color: $SelectedColor;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.btn:hover {
+    background-color: $primaryColor;
+}
+
+.updatebtn{
+    padding: 0.2rem;
+    background-color: $SelectedColor;
+    border-radius: 0.5rem;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.updatebtn:hover {
+    background-color: $primaryColor;
+}
+
+.TitleText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $SelectedColor;
+}
+
+.SecondaryTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    color: $SelectedColor;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primaryColor;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.NavbarText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    color: $NavbarTextColor;
+}
+
+.dropdownContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.ListComponentContainer {
+    width: 100%;
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+    border-color: rgb(233, 233, 233);
+    border-width: 2px;
+    border-style: solid;
+    padding: 1rem;
+    margin-top: 1em;
+
+    .keyText {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        width: 30%;
+    }
+
+    .valueText {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        color: $SelectedColor;
+    }
+}
+
+.tableFormat {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    .touchableContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+
+    .touchableContainer:hover {
+        color: $boldColor;
+    }
+
+    .tableColumnContainer {
+        width: 12%;
+        margin: 2px;
+        // background-color: white;
+    }
+
+    .tableSpecialContainer {
+        width: 21%;
+        margin: 2px;
+        // background-color: white;
+    }
+
+    .button {
+        background-color: $SelectedColor;
+        border-width: none;
+        border-color: transparent;
+        color: white;
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+
+.SelectContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 1rem;
+
+    .key{
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .searchContainer{
+        width: 20%;
+    }
+}
+
+.DisplayBar{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    padding-left: 1em;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.cancelButton{
+    padding-right: 1em;
+    cursor: pointer;
+    color: white;
+    background-color: $boldColor;
+    border-radius: 10px;
+    padding-left: 1em;
+}
