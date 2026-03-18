@@ -16,7 +16,7 @@ app.prepare().then(() => {
       handle(req, res, parsedUrl);
     }).listen(port, (err) => {
       if (err) throw err;
-      console.log("> Server started on http://localhost:3000");
+      console.log("> Server started on http://localhost:4000");
     });
   }).catch(ex => {
     console.error(ex.stack)
