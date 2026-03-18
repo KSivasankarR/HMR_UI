@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        PORT = '3000'
+        PORT = '4000'
         HOST = '0.0.0.0'
         APP_NAME = 'HMR_UI'
         APP_DIR = "${WORKSPACE}"
