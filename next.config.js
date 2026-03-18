@@ -4,8 +4,8 @@
 const ContentSecurityPolicy = `
   default-src 'self' 'unsafe-inline' https://marriage.rs.ap.gov.in http://registration.ap.gov.in https://registration.ap.gov.in http://10.10.120.190:4009 http://10.10.120.190:3000;
   script-src 'self' 'unsafe-inline';
-  child-src https://marriage.rs.ap.gov.in http://registration.ap.gov.in https://registration.ap.gov.in http://10.10.120.190:4009 http://10.10.120.190:3000;
-  style-src 'self' 'unsafe-inline' https://marriage.rs.ap.gov.in https://registration.ap.gov.in http://10.10.120.190:4009 http://10.10.120.190:3000 https://fonts.googleapis.com https://www.gstatic.com;
+  child-src https://marriage.rs.ap.gov.in http://registration.ap.gov.in https://registration.ap.gov.in http://10.10.120.190:4009 http://10.10.120.190:4000;
+  style-src 'self' 'unsafe-inline' https://marriage.rs.ap.gov.in https://registration.ap.gov.in http://10.10.120.190:4009 http://10.10.120.190:4000 https://fonts.googleapis.com https://www.gstatic.com;
   font-src 'self' 'unsafe-inline' https://fonts.gstatic.com;
   img-src * 'self' data: http:;
 `*/
